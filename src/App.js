@@ -7,13 +7,13 @@ import './App.css';
 function App() {
   return (
     <ThemeProvider>
-      <Router>
+    <Router>
         <ThemeToggle />
-        <Routes>
-          <Route path="/" element={<SkipLandingPage />} />
-          <Route path="/next-step" element={<NextStep />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<SkipLandingPage />} />
+        <Route path="/next-step" element={<NextStep />} />
+      </Routes>
+    </Router>
     </ThemeProvider>
   );
 }

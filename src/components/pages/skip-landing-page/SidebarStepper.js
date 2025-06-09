@@ -1,9 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { FiX } from "react-icons/fi";
 
-export default function SidebarStepper({ steps, currentStepIndex, isOpen }) {
+export default function SidebarStepper({ steps, currentStepIndex, isOpen, onClose }) {
   return (
     <aside className={`skip-stepper-sidebar${isOpen ? " open" : ""}`}>
+      <button
+        className="sidebar-close-btn"
+        onClick={onClose}
+        aria-label="Close sidebar"
+        type="button"
+      >
+        <FiX size={28} />
+      </button>
       <div className="skip-stepper-vertical">
         {steps.map((step, i) => (
           <div key={step.label} className={`skip-stepper-step-vertical${i === currentStepIndex ? " active" : ""}`}>
@@ -28,4 +37,5 @@ SidebarStepper.propTypes = {
   ).isRequired,
   currentStepIndex: PropTypes.number.isRequired,
   isOpen: PropTypes.bool,
+  onClose: PropTypes.func,
 }; 

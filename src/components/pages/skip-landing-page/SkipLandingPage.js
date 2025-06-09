@@ -55,7 +55,7 @@ export default function SkipLandingPage() {
       </nav>
 
       {/* Sidebar Stepper */}
-      <SidebarStepper steps={steps} currentStepIndex={2} isOpen={isSidebarOpen} />
+      <SidebarStepper steps={steps} currentStepIndex={2} isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
 
       {/* Main Content */}
       <main className="skip-main-content">
