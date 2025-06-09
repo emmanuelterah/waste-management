@@ -26,6 +26,8 @@
   border-right: 1.5px solid #e0e6f7;
   overflow-x: auto;
   overflow-y: hidden;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 .skip-stepper {
@@ -319,7 +321,9 @@
 /* Tablets */
 @media (max-width: 900px) {
   .skip-stepper-sidebar {
-    width: 200px;
+    width: 70px;
+    min-width: 60px;
+    padding: 0 0;
   }
 
   .skip-main-content {
@@ -373,6 +377,21 @@
     grid-template-columns: 1fr;
     max-width: 100vw;
     padding: 0 0.5rem;
+  }
+
+  .skip-stepper-vertical {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .skip-stepper-label-vertical {
+    font-size: 12px;
+  }
+
+  .skip-stepper-icon-wrap {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
   }
 }
 
@@ -749,6 +768,9 @@
   gap: 0;
   position: relative;
   margin-top: 32px;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 24px;
 }
 
 .skip-stepper-step-vertical {
@@ -850,4 +872,19 @@
   opacity: 0.5;
   border: 3px solid transparent;
   box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .skip-stepper-sidebar {
+    width: 54px;
+    min-width: 48px;
+  }
+  .skip-stepper-label-vertical {
+    font-size: 10px;
+  }
+  .skip-stepper-icon-wrap {
+    width: 22px;
+    height: 22px;
+    font-size: 13px;
+  }
 } 
