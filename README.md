@@ -8,6 +8,10 @@
 
 A modern, accessible, and visually engaging skip size selection interface component. This component allows users to select from a grid of skip cards, each displaying key information and a clear status banner. The selected card is highlighted with a luminescent blue effect for clarity and focus.
 
+## Web View
+
+Access it at https://waste-management-beta-teal.vercel.app/
+
 ## Features
 
 - 🎯 Interactive Card Grid for skip size selection
