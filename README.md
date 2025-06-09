@@ -33,7 +33,7 @@ Access it at https://waste-management-beta-teal.vercel.app/
 npm install
 
 # Run development server
-npm run dev
+npm start
 
 # Run tests
 npm test
