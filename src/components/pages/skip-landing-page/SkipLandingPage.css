@@ -919,7 +919,7 @@
 }
 
 .sidebar-close-btn {
-  display: block;
+  display: none;
   position: absolute;
   top: 18px;
   right: 18px;
@@ -932,6 +932,13 @@
   padding: 0.2em 0.4em;
   transition: color 0.2s;
 }
+
+@media (max-width: 900px) {
+  .sidebar-close-btn {
+    display: block;
+  }
+}
+
 .sidebar-close-btn:hover {
   color: #ff5e5e;
 }
