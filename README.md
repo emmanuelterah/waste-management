@@ -1,7 +1,7 @@
 # Skip Card Selection UI Component
 
 <div align="center">
-  <img src="docs/preview.png" alt="Skip Card Selection Preview" width="600"/>
+  <img src="../waste-management/src/images/preview.png" alt="Skip Card Selection Preview" width="600"/>
 </div>
 
 ## Overview
