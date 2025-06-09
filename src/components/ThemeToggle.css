@@ -23,7 +23,21 @@
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 1000;
+  z-index: 1001;
+}
+
+@media (max-width: 900px) {
+  .theme-switch-wrapper {
+    top: 12px;
+    right: 60px; /* Position it to the left of the hamburger menu */
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-switch-wrapper {
+    top: 10px;
+    right: 50px;
+  }
 }
 
 .theme-switch {
